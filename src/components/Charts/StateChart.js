@@ -100,7 +100,7 @@ export default class StateChart extends Component {
                                 <label class="form-label">Filter by State</label>
                                 <div class="form-control-wrap">
                                     <select class="form-select form-control form-control-lg" onChange={this.SortData}>
-                                        <option disabled selected>Select States</option>
+                                        <option disabled selected>Select State</option>
                                         {stateNames && stateNames.map((state, index) => {
                                             return <option key={index} value={state.state}>{state.state}</option>
                                         })}
