@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Route, Switch, } from "react-router-dom";
+import { withRouter } from 'react-router'
 import { loadProgressBar } from "axios-progress-bar";
 import "axios-progress-bar/dist/nprogress.css";
-import CovidChart from './components/CovidChart';
+import Index from './components/Charts/Index';
 
 
-function App() {
-  return (
-    <>
-      <Switch>
-        <Route path="/" exact component={CovidChart} />
-     </Switch>
-    </>
-  );
+
+loadProgressBar();
+
+class App extends Component {
+  render() {
+    return (
+      <>
+        {/* <NavBar /> */}
+        <Switch>
+          <Route path="/" exact component={Index} />
+        </Switch>
+      </>
+    )
+  }
 }
-
-export default App;
+export default withRouter(App);
