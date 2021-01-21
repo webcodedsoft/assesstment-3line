@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ### Write an algorithm to output the state of the cells after the given number of days.  where input is array of integers, and n number of days
 
 ## Example 1 : 
